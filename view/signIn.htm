@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  method="post">
+            <table border="2" align="center">
+                <tr>
+                    <td>
+                        Name:
+                            <input type="text" name="username" id="username" placeholder="enter your name">
+                    </td>
+                    <tr>
+                    <td>
+                        Emaill:
+                            <input type="email" name="useremail" id="useremail" placeholder="enter your email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        password:
+                            <input type="password" name="userpass" id="userpass" placeholder="enter your password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Confirm password:
+                            <input type="password" name="userconpass" id="userconpass" placeholder="re-enter your password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Submit" onclick="formSubmit(event)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+<script src="signin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

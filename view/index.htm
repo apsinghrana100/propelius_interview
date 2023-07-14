@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table border="2" align="centre">
+
+            <tr>
+                <td>
+                    Name :
+                    <input type="text" name="bookname" id="bookname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    ImageUrl :
+                    <input type="text" name="imageurl" id="imageUrl">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Autho-Name :
+                    <input type="text" name="authname" id="An">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Pages :
+                    <input type="number" name="pages" id="page">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Price :
+                    <input type="number" name="price" id="price">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="Submit" onclick="SubmitBookDetail(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="fetchbookDetail" onclick="fetchBookDetail(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="updatebookDetail" onclick="updatedata()">
+                </td>
+            </tr>
+           
+
+
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border="2" align="center">
+            <tr>
+                <th>bookname</th>
+                <th>imageurl</th>
+                <th>authername</th>
+                <th>pages</th>
+                <th>price</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+            <tr id="data"></tr>
+
+        </table>
+    </form>
+
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
